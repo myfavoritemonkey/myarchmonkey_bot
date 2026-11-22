@@ -1,0 +1,15 @@
+[Unit]
+Description=Private Telegram bridge to local Codex CLI
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/my/projects/myarchmonkey_bot
+ExecStart=%h/my/projects/myarchmonkey_bot/target/release/myarchmonkey_bot
+Restart=on-failure
+RestartSec=5
+UMask=0077
+
+[Install]
+WantedBy=default.target

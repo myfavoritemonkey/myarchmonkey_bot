@@ -1,0 +1,6 @@
+# Создайте копию этого файла с именем config.toml и заполните значения.
+bot_token = "PASTE_BOTFATHER_TOKEN_HERE"
+allowed_user_id = 0
+working_directory = "/path/to/project"
+codex_path = "/usr/bin/codex"
+task_timeout_seconds = 600
